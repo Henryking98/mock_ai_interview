@@ -37,7 +37,7 @@ const Home = () => {
 
                 <div className="interviews-section">
                     {dummyInterviews.map((interview) => (
-                        <InterviewCard {...interview} />
+                        <InterviewCard {...interview} key={interview.id}/>
                     ))}
                 
                 
@@ -64,7 +64,7 @@ const Home = () => {
 
                 <div className="interviews-section">
                     {dummyInterviews.map((interview) => (
-                        <InterviewCard {...interview} />
+                        <InterviewCard {...interview} key={interview.id}/>
                     ))}
                     {/* {hasUpcomingInterviews ? (
                         allInterview?.map((interview) => (
